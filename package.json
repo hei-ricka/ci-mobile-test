@@ -7,7 +7,10 @@
     "ios": "react-native run-ios",
     "lint": "eslint .",
     "start": "react-native start",
-    "test": "jest"
+    "test": "jest",
+    "e2e:android:build": "cd android && ./gradlew assembleRelease",
+    "e2e:android:install": "adb install android/app/build/outputs/apk/release/app-release.apk",
+    "e2e:android:run": "maestro test ./maestro/hello.yml"
   },
   "dependencies": {
     "react": "19.0.0",
