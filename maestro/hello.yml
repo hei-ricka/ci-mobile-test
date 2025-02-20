@@ -1,0 +1,4 @@
+appId: com.hello
+---
+- launchApp
+- tapOn: "Hello world"
